@@ -24,7 +24,6 @@ const getSum = () => {
 
 	getSumBtn.disabled = true;
 
-	console.log("Total Price Calculated and Row Added.")
 
 	
   
