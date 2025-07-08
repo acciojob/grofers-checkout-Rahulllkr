@@ -4,7 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-	const priceElement = document.querySelectorAll(".price")
+	const priceElement = document.querySelectorAll(".prices")
 	let total = 0;
 
 	priceElement.forEach((ele) => {
@@ -13,6 +13,8 @@ const getSum = () => {
 	const newRow = document.createElement("tr");
 	const newCell = document.createElement("td");
 	newCell.colSpan = 2;
+	newCell.style.fontWeight = "bold";
+    newCell.style.textAlign = "center";
 	newCell.textContent = `Total Price: ${total}`
 
 	newRow.appendChild(newCell);
@@ -21,6 +23,8 @@ const getSum = () => {
 	table.appendChild(newRow);
 
 	getSumBtn.disabled = true;
+
+	console.log("Total Price Calculated and Row Added.")
 
 	
   
