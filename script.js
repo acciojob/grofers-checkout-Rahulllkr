@@ -20,7 +20,7 @@ const getSum = () => {
 	const table = document.querySelector("table");
 	table.appendChild(newRow);
 
-	getSumBtn.disable = true;
+	getSumBtn.disabled = true;
 
 	
   
