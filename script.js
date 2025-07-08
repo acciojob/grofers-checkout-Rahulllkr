@@ -13,8 +13,8 @@ const getSum = () => {
 	const newRow = document.createElement("tr");
 	const newCell = document.createElement("td");
 	newCell.colSpan = 2;
-	newCell.style.fontWeight = "bold";
-    newCell.style.textAlign = "center";
+	// newCell.style.fontWeight = "bold";
+    // newCell.style.textAlign = "center";
 	newCell.textContent = `Total Price: ${total}`
 
 	newRow.appendChild(newCell);
