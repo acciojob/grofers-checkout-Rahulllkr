@@ -3,9 +3,9 @@ getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
 // Optional: Create reset button
-const resetBtn = document.createElement("button");
-resetBtn.append("Reset Total");
-document.body.appendChild(resetBtn);
+// const resetBtn = document.createElement("button");
+// resetBtn.append("Reset Total");
+// document.body.appendChild(resetBtn);
 
 const getSum = () => {
 	const priceElements = document.querySelectorAll(".price");
@@ -35,13 +35,13 @@ const getSum = () => {
 	}
 };
 
-const resetTotal = () => {
-	const existingRow = document.getElementById("totalRow");
-	if (existingRow) {
-		existingRow.remove();
-	}
-};
+// const resetTotal = () => {
+// 	const existingRow = document.getElementById("totalRow");
+// 	if (existingRow) {
+// 		existingRow.remove();
+// 	}
+// };
 
 // Event listeners
 getSumBtn.addEventListener("click", getSum);
-resetBtn.addEventListener("click", resetTotal);
+// resetBtn.addEventListener("click", resetTotal);
